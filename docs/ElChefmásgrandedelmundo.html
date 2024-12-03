@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Chef más Grande del Mundo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>El Chef más Grande del Mundo</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+
+            <p>
+              Cuando se habla de la cocina, pocos nombres resuenan con tanto peso y admiración como el de “Lenguitti Tadfott”, conocido mundialmente como uno de los chefs más innovadores y talentosos de todos los tiempos. Desde sus primeros días, este prodigioso cocinero ha dejado una marca indeleble en la historia de la gastronomía, rompiendo récords y transformando la manera en la que concebimos la cocina clasica. Este es un vistazo a la vida del hombre que redefinió la alta cocina.
+            </p>
+
+            <p>
+              Desde muy joven, Lenguitti mostró un talento natural que sorprendió a sus profesores y mentores. A los 15 años, logró lo que muchos chefs experimentados no alcanzan en toda una vida: rompió tres récords culinarios que lo catapultaron a la fama. Estos récords incluían el mejor plato visualmente atractivo, la mejor textura en un platillo, y, tal vez el más impresionante, la invención de un nuevo condimento que rápidamente se convirtió en un fenómeno en las cocinas de todo el mundo. Su condimento especial, una mezcla secreta de hierbas y especias, añadió un toque de frescura y sabor único a los platillos más sencillos, convirtiéndose en un ingrediente esencial en muchas cocinas.
+            </p>
+
+            <p>
+              Lenguitti Tadfott ya estaba en boca de todos, y su carrera apenas estaba comenzando. A raíz de estos logros iniciales, su reputación creció de forma imparable, y a los pocos meses ya había captado la atención de las principales revistas de gastronomía. Fue destacado en publicaciones de renombre como The New Time y The Man Process, donde lo describían como un joven genio culinario, un prodigio que parecía haber nacido con una cuchara de plata en la mano. No solo eran sus recetas innovadoras, sino también su enfoque meticuloso en la presentación y en la experiencia gastronómica total lo que asombraba a críticos y comensales por igual.
+            </p>
+
+            <p>
+              Pero Lenguitti no solo se contentó con la fama temprana. A los 20 años, decidió formalizar sus conocimientos culinarios y se matriculó en la prestigiosa Universidad de BlueePoteti, donde completó su carrera en gastronomía con honores. Durante su tiempo en la universidad, no solo perfeccionó sus habilidades, sino que también comenzó a desarrollar lo que se convertiría en su estilo distintivo: una fusión entre la cocina clásica y moderna, combinando técnicas tradicionales con ingredientes inusuales. Su enfoque siempre estuvo centrado en la innovación, y sus compañeros de clase y profesores lo recuerdan como un estudiante obsesionado con los detalles, siempre buscando maneras de llevar los límites de la cocina a nuevos niveles.
+            </p>
+
+            <p>
+              Después de su graduación, Lenguitti decidió que su siguiente paso sería compartir su pasión y conocimientos con otros. Fue entonces cuando abrió su primera escuela culinaria, un proyecto que, según él mismo, nació de la idea de devolver algo al mundo de la gastronomía. Quería crear un lugar donde los jóvenes chefs pudieran experimentar, aprender, y, sobre todo, desarrollar un estilo propio. La escuela fue un éxito inmediato, atrayendo a estudiantes de todo el mundo, quienes veían en Tadfott no solo a un maestro, sino también a un mentor y una fuente de inspiración. En su escuela, Lenguitti implementó un enfoque único en la enseñanza, que incluía clases magistrales, talleres intensivos y competiciones culinarias que retaban a sus alumnos a dar lo mejor de sí mismos.
+            </p>
+
+            <p>
+              Uno de los aspectos más destacados de su escuela era el enfoque en la creatividad y la autenticidad. Lenguitti siempre animaba a sus estudiantes a no seguir recetas al pie de la letra, sino a experimentar con sabores, texturas y presentaciones hasta encontrar algo verdaderamente único. No era raro que en sus clases se enseñara a preparar un plato clásico de forma tradicional y, luego, en una segunda sesión, se desafiara a los estudiantes a deconstruirlo y reinventarlo completamente. Esta filosofía de “no hay reglas en la cocina, solo posibilidades” se convirtió en la marca distintiva de su academia.
+            </p>
+
+            <p>
+              Con el tiempo, los graduados de la escuela culinaria de Lenguitti ganaron fama por su creatividad y habilidades excepcionales. Los restaurantes más prestigiosos del mundo comenzaron a competir por contratar a estos jóvenes chefs, sabiendo que cualquiera que se graduara bajo la tutela de Tadfott estaba destinado al éxito. Su academia adquirió tal reputación que, eventualmente, Lenguitti abrió otras sedes en ciudades importantes alrededor del mundo, consolidando así su legado como mentor y educador.
+            </p>
+
+            <p>
+              Mientras tanto, Lenguitti siguió experimentando y creando en su propia cocina. A lo largo de su carrera, introdujo numerosos conceptos innovadores, como la cocina multisensorial, donde no solo se busca complacer el sentido del gusto, sino también el olfato, la vista y hasta el oído, utilizando la música y los aromas en sus presentaciones para intensificar la experiencia. En sus restaurantes, la comida no es solo un plato; es un espectáculo que involucra todos los sentidos, convirtiendo cada comida en un evento inolvidable.
+            </p>
+
+            <p>
+              Además de ser un chef reconocido, Lenguitti también se convirtió en una figura filantrópica, utilizando su influencia y éxito para promover causas sociales. Fundó varias organizaciones benéficas que luchan contra el hambre y la desnutrición en distintas partes del mundo, ofreciendo educación culinaria en comunidades desfavorecidas y promoviendo el uso de ingredientes locales y sostenibles.
+            </p>
+
+            <p>
+              Hoy en día, Lenguitti Tadfott es considerado una leyenda viviente en el mundo de la gastronomía. Como un pilar de la Nueva Gastronomía de Felverdot, siempre sera un recordatorio de que siempre veamos adelante.
+            </p>
+
+            <p>
+              — Nueva Actualización —
+            </p>
+
+            <p>
+              El famoso chef Lenguitti Tadfott murió a una edad de 70 años. No se ha revelado la causa de muerte. Mis condolencias a la Familia Tadfott.
+            </p>
+
+            <p>
+              Iniciando los años 1981, es cuando nos dejan las personas más talentosas de los tiempos.
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" },
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

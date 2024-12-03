@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+
+            <p>
+              Lo que comenzó como una preocupación leve en el norte de Pelstrot ha escalado a una crisis sanitaria que amenaza con cruzar las fronteras de Siloon y Jilson. La pandemia, inicialmente descrita como una “ligera enfermedad”, se ha transformado en una situación de emergencia nacional, afectando a millones de ciudadanos y dejando una huella profunda en la economía y la vida cotidiana.
+            </p>
+
+            <h4>El Inicio de la Tormenta</h4>
+
+            <p>
+              Hace dos meses, los primeros casos se reportaron en las zonas rurales del norte de Pelstrot. Los síntomas iniciales eran moderados: fiebre, fatiga y dolores musculares. Sin embargo, en cuestión de semanas, los hospitales de la región comenzaron a llenarse de pacientes con cuadros graves que requerían atención urgente. Las autoridades locales, inicialmente despreocupadas, subestimaron el alcance de la enfermedad, calificándola como una gripe estacional más fuerte de lo habitual.
+            </p>
+
+            <p>
+              Mientras tanto, la actividad económica en el norte empezó a resentirse. Los trabajadores de las fábricas y campos agrícolas comenzaron a faltar a sus turnos, incapaces de salir de casa debido a la debilidad extrema. Las cadenas de suministro se interrumpieron, y los productos esenciales dejaron de llegar a los mercados del sur. Este fue el primer golpe visible que la pandemia asestó al país.
+            </p>
+
+            <h4>El Desplome Económico</h4>
+
+            <p>
+              La expansión de la pandemia coincidió con el colapso del Gran Banco de Pelstrot, lo que amplificó sus efectos devastadores. Muchas empresas ya debilitadas por la crisis bancaria no pudieron soportar la pérdida de mano de obra y la caída en la demanda. Los ciudadanos, incapaces de trabajar y con sus ahorros atrapados en el banco, se vieron obligados a depender de los recursos limitados proporcionados por el gobierno.
+            </p>
+
+            <p>
+              “El banco ya estaba tambaleándose, pero la pandemia fue el golpe final”, comentó un analista financiero en un reciente informe. La combinación de factores económicos y sanitarios creó una tormenta perfecta que paralizó a Pelstrot.
+            </p>
+
+            <h4>La Propagación al Sur y las Fronteras</h4>
+
+            <p>
+              En un principio, las autoridades confiaron en que la enfermedad permanecería confinada al norte del país. Sin embargo, con la falta de restricciones de viaje y la subestimación del virus, la enfermedad comenzó a expandirse hacia el sur. En las grandes ciudades de Pelstrot, los casos aumentaron exponencialmente. Los sistemas de transporte, que en su mayoría dependían de conductores y trabajadores del norte, se detuvieron casi por completo.
+            </p>
+
+            <p>
+              Las zonas fronterizas con Siloon y Jilson, conocidas por su actividad comercial vibrante, también comenzaron a reportar casos. A medida que los trabajadores migrantes y comerciantes llevaron la enfermedad a través de las rutas comerciales, las comunidades aledañas a estas fronteras entraron en pánico.
+            </p>
+
+            <p>
+              Siloon y Jilson han comenzado a reforzar sus medidas fronterizas, exigiendo controles estrictos de salud para los viajeros procedentes de Pelstrot. Sin embargo, la presión económica que ejerce la interrupción de las rutas comerciales está causando tensiones diplomáticas entre las naciones vecinas.
+            </p>
+
+            <h4>La Vida Cotidiana en Pelstrot</h4>
+
+            <p>
+              En las áreas más afectadas, la vida cotidiana se ha transformado drásticamente. En los centros urbanos, las calles están casi vacías. Las escuelas y oficinas han cerrado, y los supermercados luchan por mantenerse abastecidos. Las familias han recurrido al autoaislamiento, temerosas de un virus que sigue sin ser completamente comprendido por los científicos.
+            </p>
+
+            <p>
+              “En mi vecindario, la mayoría de la gente ya no sale de casa. Solo salimos para lo esencial, pero incluso eso se siente peligroso”, relató un residente de la ciudad de Felverdot en una entrevista.
+            </p>
+
+            <p>
+              El sistema de salud, ya tensionado por la falta de recursos, se encuentra al borde del colapso. Los hospitales rechazan pacientes debido a la falta de camas, mientras que los médicos y enfermeros trabajan turnos agotadores para atender a los afectados.
+            </p>
+
+            <h4>La Búsqueda de Soluciones</h4>
+
+            <p>
+              El gobierno de Pelstrot ha anunciado recientemente un paquete de medidas de emergencia para enfrentar la pandemia. Estas incluyen la construcción de hospitales temporales, la distribución de kits de emergencia para los hogares y la implementación de restricciones más estrictas sobre los viajes entre regiones.
+            </p>
+
+            <p>
+              Además, se están llevando a cabo esfuerzos internacionales para colaborar en la investigación de la enfermedad. Científicos de Siloon y Jilson han ofrecido apoyo en forma de equipos médicos y personal especializado, aunque las tensiones políticas han complicado estos intercambios.
+            </p>
+
+            <p>
+              En el contexto de esta crisis, los esfuerzos del renombrado científico Reinhert también han vuelto a ser tema de discusión. Aunque su creación, "El Traje", fue diseñada para tratar estados terminales, algunos expertos sugieren que la tecnología podría adaptarse para ayudar en esta pandemia. Sin embargo, el acceso limitado a esta innovadora solución plantea desafíos significativos.
+            </p>
+
+            <h4>Una Nación en Suspenso</h4>
+
+            <p>
+              A medida que la pandemia continúa su avance, los ciudadanos de Pelstrot enfrentan un futuro incierto. La economía está en ruinas, el sistema de salud lucha por mantenerse a flote y las tensiones sociales aumentan cada día.
+            </p>
+
+            <p>
+              La expansión hacia las fronteras con Siloon y Jilson plantea una pregunta alarmante: ¿será esta pandemia un evento aislado o se convertirá en una crisis regional con implicaciones globales?
+            </p>
+
+            <p>
+              Por ahora, la prioridad en Pelstrot es contener la enfermedad y encontrar una solución duradera. Sin embargo, los desafíos son inmensos, y la nación entera espera ansiosa un rayo de esperanza en medio de esta tormenta sin precedentes.
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" }
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

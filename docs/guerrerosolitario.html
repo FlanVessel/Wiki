@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Guerrero Solitario</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>El Guerrero Solitario</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+
+            <p>
+              No recuerdo la última vez que vi el sol sin esa capa oscura de polvo en el horizonte. Las ciudades están muertas, Pelstrot es un cementerio. El silencio es ensordecedor. A veces, lo único que escucho es mi propia respiración o el crujido de mis botas sobre el asfalto resquebrajado. Llevo semanas caminando solo, buscando suministros, esquivando sombras, y enfrentándome a esos que alguna vez fueron humanos.
+            </p>
+
+            <p>
+              Los llamamos "los poseídos", aunque no sé si el término les hace justicia. Hay algo en ellos, algo más allá del parásito que los consume. No son simples cadáveres ambulantes; parecen tener un propósito, una especie de instinto. La primera vez que me enfrenté a uno, fue casi mi fin. Un hombre, o lo que quedaba de él, me atacó en lo que alguna vez fue una tienda de abarrotes. Su piel estaba rota y reseca, y tenía esos fragmentos negros adheridos a su cuello y manos. Casi se me sale el corazón cuando me lanzó al suelo. No sé cómo logré golpearlo con suficiente fuerza como para derribarlo. Desde entonces, siempre llevo un machete en la mano, y nunca bajo la guardia.
+            </p>
+
+            <h4>Sobrevivir en la Ruina</h4>
+
+            <p>
+              La comida es escasa, y lo que queda se está pudriendo rápidamente. He aprendido a cazar en los bosques fuera de la ciudad, pero incluso ahí, la caza es peligrosa. Los animales también parecen estar infectados, su carne ennegrecida y sus ojos vacíos me indican que no son seguros para comer. En lugar de eso, dependo de las raciones enlatadas que encuentro en los lugares más escondidos. Nadie revisa las casas quemadas, así que es allí donde suelo encontrar mis mejores hallazgos.
+            </p>
+
+            <p>
+              La soledad es peor que el hambre. Hablar conmigo mismo se ha vuelto un hábito; a veces, creo escuchar voces en las calles vacías, pero sé que es solo mi mente jugándome trucos. No puedo permitir que la desesperación me controle. Tengo un objetivo: llegar al sur, cruzar la frontera hacia Siloon. Se dice que allí las cosas no son tan malas, que hay campamentos para los pocos que lograron sobrevivir. Tal vez ahí encuentre respuestas, o al menos un refugio seguro.
+            </p>
+
+            <h4>Refugio en las Sombras</h4>
+
+            <p>
+              Cada noche es un juego de vida o muerte. Los poseídos son más activos cuando cae la oscuridad. Aprendí a construir refugios improvisados en las azoteas de los edificios, donde la altura me da una ligera ventaja. Las barricadas y las trampas se han vuelto mi especialidad. A veces los escucho deambular por las calles, moviéndose en grupo, comunicándose con gruñidos y chillidos. Sé que están buscando algo, quizás otros como yo.
+            </p>
+
+            <p>
+              No siempre estoy solo, o al menos no lo estaba. Hace una semana encontré a un hombre en un edificio abandonado. Estaba malherido, con fiebre alta y una profunda herida en su pierna. Traté de ayudarlo, pero la infección ya había avanzado demasiado. Me rogó que lo matara, pero no pude hacerlo. La infección se encargó de él, y tuve que huir antes de que su grito de agonía atrajera a más de esas criaturas.
+            </p>
+
+            <h4>Esperanza en las Ruinas</h4>
+
+            <p>
+              Pese a todo, aún hay esperanza. La llevo en mi bolsillo: un pequeño mapa dibujado a mano, con una ubicación marcada en el sur. Dice "Refugio Seguro". No sé quién lo escribió ni si realmente existe, pero es lo único que me mantiene en pie. He aprendido a vivir en la ruina, a moverme sin ser visto, a cazar en la penumbra. Y, si el refugio no está ahí cuando llegue, seguiré adelante.
+            </p>
+
+            <p>
+              He perdido a todos los que conocía, mi familia, mis amigos... pero me niego a perderme a mí mismo. Hay algo que aún vale la pena proteger en este mundo, aunque sea una simple chispa de humanidad. El parásito puede haber destruido nuestras ciudades, pero no destruirá mi voluntad.
+            </p>
+
+            <p>
+              Por ahora, seguiré mi camino, siempre hacia el sur, siempre buscando la luz en medio de la oscuridad. No me detendré hasta encontrar un lugar seguro o hasta que mi cuerpo ya no pueda dar un paso más. Porque mientras yo esté vivo, hay esperanza, y mientras haya esperanza, la lucha no habrá terminado.
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" }
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

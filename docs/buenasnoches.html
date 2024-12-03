@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buenas Noches...</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>Buenas Noches...</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+
+            <p>
+              No importa cuántas veces lo viva, cuando la noche cae sobre Pelstrot, el miedo cobra una nueva forma. De día, estas criaturas ya son terroríficas, pero la oscuridad parece otorgarles un poder que no entiendo del todo. He estado observándolos durante semanas, estudiando sus comportamientos, sus patrones, y he notado algo que solo ocurre cuando la luz del sol desaparece: cambian, se adaptan, se vuelven algo aún más peligroso. La oscuridad parece alimentarlos, hacerlos más fuertes, más rápidos. El día ya no ofrece seguridad, pero la noche... la noche es una verdadera pesadilla.
+            </p>
+
+            <h4>La Transformación Nocturna</h4>
+
+            <p>
+              Durante mis observaciones, siempre me he mantenido en la seguridad de mi refugio improvisado cuando la oscuridad toma el control, pero no hace mucho tomé el riesgo. Necesitaba entender lo que les sucede, necesitaba saber qué los convierte en esas bestias nocturnas. He visto cómo sus cuerpos, ya de por sí extraños, sufren un cambio evidente. Su piel viscosa y negra parece tensarse, como si se preparara para algo. Los músculos que alguna vez fueron humanos se vuelven más pronunciados, las extremidades parecen estirarse ligeramente, y sus movimientos se tornan más fluidos, más precisos. No hay un cambio radical en su aspecto, pero es suficiente para notar la diferencia.
+            </p>
+
+            <p>
+              He medido su fuerza durante el día, cuando sus ataques son ya mortales de por sí, pero lo que hacen en la noche es otra cosa. Son más rápidos, sus reflejos son instantáneos. He visto cómo cazan en grupo, coordinados como una jauría de lobos acechando a su presa, pero la diferencia es que no hay errores, no hay fallos en sus ataques. Parecen ver en la oscuridad mejor de lo que lo harían bajo la luz, como si la penumbra les diera la ventaja que el día les niega.
+            </p>
+
+            <h4>Más Rápidos, Más Letales</h4>
+
+            <p>
+              En la penumbra, me mantengo oculto, observándolos desde la distancia con mis binoculares. Los he visto atacar de una forma que jamás había presenciado durante el día. He cronometrado el tiempo que tardan en moverse de un punto a otro, y es aterrador. En la oscuridad, parecen correr a una velocidad que roza lo sobrehumano, alcanzando a sus víctimas en segundos. No puedo explicar cómo logran esos saltos imposibles, cómo su agilidad les permite maniobrar entre escombros y ruinas sin detenerse.
+            </p>
+
+            <p>
+              A diferencia del día, no titubean. He notado que durante la luz del sol, hay un momento en sus ataques en el que parecen calcular sus movimientos, como si aún conservaran una chispa de duda, pero en la noche esa duda desaparece. Se lanzan a la ofensiva con una ferocidad implacable, sin detenerse, sin retroceder. La primera vez que vi a uno de ellos arrancar una puerta de metal de sus bisagras con una facilidad pasmosa supe que mi margen de error era aún menor cuando el sol desaparecía del cielo.
+            </p>
+
+            <h4>La Oscuridad como Aliada</h4>
+
+            <p>
+              Parece que la oscuridad les da una ventaja, algo que he intentado entender desde que comencé a observarlos. Hay un brillo apenas perceptible en sus cuerpos cuando se mueven en la penumbra, como si la propia negrura se alimentara de la ausencia de luz. Me pregunté si la noche era su aliada, si estaban hechos para moverse en ella, si la luz era una limitación más que una amenaza. Pero hasta ahora, no hay respuestas claras, solo su comportamiento que me deja en claro que la humanidad perdió la ventaja que alguna vez tuvo.
+            </p>
+
+            <p>
+              La primera vez que decidí acercarme más, fue una noche sin luna, en la que la oscuridad era total. Decidí esconderme detrás de un muro derrumbado, observando a uno de esos seres desde apenas unos metros de distancia. Su respiración era casi imperceptible, pero se movía con una gracia antinatural, como si cada paso estuviera medido y calculado para no hacer ruido. Era como si la noche le perteneciera, como si cada sombra fuera su refugio.
+            </p>
+
+            <h4>El Desastre en la Oscuridad</h4>
+
+            <p>
+              Y fue ahí, en ese momento, cuando cometí un error fatal. Mientras lo observaba, la radio a mi lado, que llevaba apagada días, se encendió de repente con un chirrido ensordecedor. El volumen estaba al máximo, y la música que brotó de sus altavoces destrozados retumbó en la habitación como una explosión. En ese instante, vi cómo la criatura giraba su cabeza en mi dirección, como si una chispa eléctrica hubiera atravesado su cerebro. En menos de un segundo, la distancia entre nosotros se desvaneció.
+            </p>
+
+            <p>
+              El pánico se apoderó de mí. Mi cuerpo se congeló y supe que no había forma de escapar. Su mirada, si es que eso se le puede llamar mirada, se clavó en mí, y lo único que pude escuchar fue mi propia respiración mezclada con el eco distorsionado de la radio. En cuestión de segundos, su figura oscura se abalanzó hacia mí, y solo tuve tiempo de dejar caer los binoculares y correr. Corrí sin mirar atrás, sin preocuparme del ruido que hacía, con la certeza de que el sonido de esa maldita radio había marcado mi sentencia.
+            </p>
+
+            <h4>El Sonido como Condena</h4>
+
+            <p>
+              Mientras corría, podía escuchar sus pasos tras de mí, sus movimientos cada vez más cercanos, cada vez más rápidos. El sonido es su debilidad, y también su mayor ventaja. Cualquier ruido los atrae, pero no parece asustarlos, sino más bien les da dirección, como si el mundo nocturno fuera su tablero de caza y el sonido la brújula que los guía. No sé cómo conseguí perderlo en la maraña de calles oscuras, pero cuando me detuve, con el corazón latiendo frenéticamente en mi pecho, supe que había aprendido una lección vital. No solo cazan en la noche... cazan con la noche.
+            </p>
+
+            <p>
+              Ahora, estoy aquí, escribiendo estas líneas en un refugio que quizás no me proteja por mucho tiempo. Las criaturas son implacables, más letales bajo el manto de la oscuridad. Me pregunto si la humanidad está preparada para enfrentarlas, si es posible que algún día podamos adaptarnos a un enemigo que no tiene miedo, que no descansa, que no se detiene. Cualquier sonido, por pequeño que sea, puede ser el último.
+            </p>
+
+            <p>
+              La radio se quedó atrás, pero el mensaje está claro: El mínimo ruido los atrae... no sé si la humanidad está lista para esta pelea.
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" },
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

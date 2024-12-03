@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No hay Cura</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>No hay Cura</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+
+            <p>
+              A medida que la situación en Pelstrot se agravaba, la esperanza de encontrar una solución parecía desvanecerse. El parásito, esa extraña entidad negra que se adhería a las personas, las transformaba en seres retorcidos y violentos, alejándolos de cualquier rastro de humanidad. El caos y la desesperación aumentaban cada día, y la ciencia, la medicina y la razón parecían perder la batalla contra esta amenaza desconocida. Sin embargo, un grupo de científicos, oculto en una base subterránea en el corazón de Pelstrot, se negó a rendirse.
+            </p>
+
+            <h4>El Último Bastión Científico</h4>
+
+            <p>
+              En las profundidades del suelo de Pelstrot, en un búnker de alta seguridad, un equipo de investigadores trabajaba sin descanso. La base, conocida únicamente como "Estación Omega", había sido originalmente construida para investigaciones secretas en biotecnología, pero ahora se había transformado en el último refugio de la ciencia en un país devastado. Aislados del mundo exterior y sin contacto con el gobierno, los científicos de Omega estaban decididos a encontrar una cura para el parásito, cueste lo que cueste.
+            </p>
+
+            <p>
+              El líder del proyecto, el Dr. Reinhert—famoso años antes por sus avances en medicina con "El traje"—había desaparecido en los primeros días de la Gran Caída, pero su legado seguía presente. Inspirados por su determinación, los científicos continuaban buscando respuestas, convencidos de que la clave para detener la propagación del parásito estaba al alcance de la mano.
+            </p>
+
+            <h4>El Experimento 43-A</h4>
+
+            <p>
+              Las pruebas comenzaron de inmediato, y los días se convirtieron en noches sin descanso. Los científicos utilizaron a los infectados que capturaron antes del colapso de Pelstrot como sujetos de prueba. El Experimento 43-A se centró en el uso de compuestos químicos avanzados para atacar la estructura del parásito sin dañar a la persona infectada. Sin embargo, el resultado fue un fracaso absoluto: los sujetos mostraban signos de mejora al principio, pero rápidamente caían en convulsiones, y el parásito parecía fortalecerse, volviéndose aún más agresivo.
+            </p>
+
+            <p>
+              El Dr. Hans Lichter, uno de los principales investigadores de la base, documentó los resultados en su diario: "El parásito es astuto. Se adapta. Cualquier compuesto que introducimos en los cuerpos infectados parece reforzarlo en lugar de debilitarlo. Es como si anticipara nuestras acciones, como si se defendiera contra cada ataque".
+            </p>
+
+            <h4>Desesperación en Aumento</h4>
+
+            <p>
+              Con cada experimento fallido, la tensión en la base aumentaba. Las raciones de comida y suministros médicos comenzaban a escasear, y la comunicación con el mundo exterior era intermitente en el mejor de los casos. Se oían rumores de nuevas oleadas de infectados en las afueras de Pelstrot, lo que indicaba que el parásito seguía extendiéndose sin control. La Estación Omega se estaba quedando sin tiempo.
+            </p>
+
+            <p>
+              Los experimentos se volvieron cada vez más arriesgados. En un intento desesperado, el equipo recurrió a tratamientos radicales, probando terapias con radiación ultravioleta, inyecciones de células modificadas genéticamente, y sueros experimentales. Ninguno de estos métodos ofreció los resultados esperados; el parásito no cedía ante nada.
+            </p>
+
+            <h4>La Tragedia de un Compañero</h4>
+
+            <p>
+              Uno de los momentos más oscuros en la base ocurrió cuando un miembro del equipo, el Dr. Laurent Finn, se infectó accidentalmente durante un procedimiento de extracción. A pesar de todas las precauciones, una pequeña herida en su mano le expuso al parásito. En cuestión de horas, mostró los primeros síntomas: fiebre alta, espasmos musculares y la aparición de manchas negras en su piel.
+            </p>
+
+            <p>
+              Los demás científicos se enfrentaron a una decisión imposible: dejarlo morir o usarlo como sujeto de prueba en la búsqueda desesperada de una cura. Finalmente, se decidió que Finn se ofreciera voluntario para ser parte de la fase experimental. Durante varios días, probaron en él cada uno de los tratamientos desarrollados. Finn, consciente de su destino, anotó en su propio diario: "Si mi vida sirve para encontrar una cura, entonces habrá valido la pena. Siento que mi mente se desvanece, que la oscuridad me consume. Espero que mi sacrificio no sea en vano".
+            </p>
+
+            <p>
+              Lamentablemente, Finn murió una semana después. La piel de su cuerpo estaba casi completamente cubierta por la sustancia negra, y sus últimos momentos fueron documentados por sus compañeros, que lloraban impotentes. Su muerte fue otro recordatorio del poder del parásito y de la lucha desigual que estaban enfrentando.
+            </p>
+
+            <h4>La Nota Final del Científico</h4>
+
+            <p>
+              Finalmente, después de meses de investigaciones fallidas, el líder del equipo, el Dr. Viktor Elgrun, dejó un mensaje final en el diario del proyecto. Sabía que el tiempo se agotaba, y que los recursos estaban al borde del colapso. En esa última entrada, escrita con una mano temblorosa y desesperada, dejó constancia de su derrota.
+            </p>
+
+            <p>
+              "No hay cura. Hemos intentado todo lo posible, cada recurso, cada idea. No entiendo la naturaleza de este parásito, su propósito, su origen. Lo único que sé es que no es de este mundo, que nuestra ciencia es incapaz de contenerlo. Ya no queda esperanza en esta base. No queda esperanza en Pelstrot."
+            </p>
+
+            <p>
+              El tono de sus palabras reflejaba la desesperación total del equipo, que ya no sabía qué hacer para detener la infección. La investigación en la Estación Omega se había convertido en un testamento de la lucha humana contra lo desconocido, y la derrota estaba grabada en cada rincón de ese laboratorio subterráneo.
+            </p>
+
+            <h4>El Último Mensaje</h4>
+
+            <p>
+              Antes de cerrar su diario, Elgrun dejó una última nota, dirigida a cualquiera que pudiera encontrarla en el futuro, a las generaciones que podrían sobrevivir al cataclismo o, quizás, a ninguna. La escribió con tinta roja en la última página, y fue un mensaje simple pero desesperado:
+            </p>
+
+            <p><b>"No sé qué sean estas cosas, pero si el infierno al fin estalló, que el cielo sea nuestra salvación."</b></p>
+
+            <p>
+              Después de eso, el contacto con la Estación Omega se perdió para siempre. Las puertas del búnker se sellaron, y la oscuridad reclamó el último refugio de esperanza en Pelstrot. Nadie volvió a saber de los científicos que quedaron dentro, y el misterio del parásito siguió extendiéndose sin piedad.
+            </p>
+
+            <p>
+              En la superficie, las ciudades continuaban cayendo una por una, y el mundo entero se enfrentaba a la realidad de que la humanidad estaba perdiendo la batalla. Sin cura a la vista, solo quedaba la supervivencia, la esperanza menguante de que, en algún rincón olvidado, aún hubiera una chispa de salvación.
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" },
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

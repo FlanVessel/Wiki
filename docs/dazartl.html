@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+            <p>
+              "Aquí, aquí… ¿Me escuchan? No sé cuántos de ustedes quedarán allá afuera, perdidos entre las sombras de un mundo que alguna vez fue nuestro. Ha pasado mucho tiempo, 22 años para ser exactos, desde que todo se vino abajo. Veintidós largos años desde que las criaturas tomaron lo que nos pertenecía, desde que la humanidad dejó de mirar hacia adelante y solo pensó en sobrevivir otro día más."
+            </p>
+
+            <p>
+              El mensaje resuena en la estática de una radio polvorienta, un eco lejano de voces humanas perdidas entre el caos. Aquellos que aún pueden escuchar este tipo de transmisiones saben que son raras, escasas, como destellos en la oscuridad. Pero esta voz es diferente. Esta no es una señal de auxilio desesperada ni el último grito de un sobreviviente al borde de la muerte. Es una invitación. Una invitación a lo que podría ser la última esperanza de la humanidad.
+            </p>
+
+            <p>
+              "Quienes aún tengan la voluntad de seguir luchando, aquellos que no se hayan rendido a la desesperación y al miedo, les hablo a ustedes. Mi nombre no importa, pero lo que tengo que decirles podría cambiarlo todo. Estoy en Dazartl, el último baluarte de la humanidad, un lugar que quizás hayan oído nombrar en los viejos días como Hazt."
+            </p>
+
+            <p>
+              El nombre, "Dazartl", es un eco de la vieja ciudad científica Hazt, pero transformado por los años y la resistencia. La Hazt de antaño, una metrópolis científica construida para desafiar los límites del conocimiento, no sobrevivió al cataclismo que arrasó el mundo. Fue una de las primeras en sucumbir al horror del parásito, pero lo que ocurrió después es lo que la diferencia del resto.
+            </p>
+            
+            <h4>La Historia de Hazt: Del Colapso a la Resurrección</h4>
+
+            <p>
+              "Hazt también cayó. No fue diferente a las otras ciudades que se derrumbaron bajo la presión de la infección. Las criaturas surgieron de la nada, consumiendo todo a su paso, transformando a las personas en monstruos que ahora vagan por la tierra. Durante los primeros años, perdimos a casi todos. La ciudad se convirtió en un cementerio viviente, llena de gritos y terror. Pero mientras todo caía, hubo un grupo que se negó a sucumbir."
+            </p>
+
+            <p>
+              Los científicos, ingenieros y sobrevivientes que quedaban en Hazt hicieron lo impensable: abandonaron la tierra y miraron al cielo. La ciudad, que alguna vez había sido un bastión del conocimiento en la superficie, comenzó a elevarse. Construyeron sobre los restos, utilizando la tecnología que quedó para crear un refugio en las alturas, una serie de plataformas que se extendían hacia el cielo, alejándose de las criaturas que ahora dominaban la tierra.
+            </p>
+
+            <p>
+              "Nosotros, en Dazartl, vivimos en el cielo. No porque seamos ángeles o santos, sino porque fue la única forma de sobrevivir. Las criaturas no pueden llegar hasta aquí. No pueden alcanzar las plataformas suspendidas entre las nubes, lejos del alcance de sus garras. Durante años, hemos construido una vida aquí, una vida segura, una vida libre del miedo constante de la tierra."
+            </p>
+
+            <h4>Una Invitación al Último Bastión de la Humanidad</h4>
+
+            <p>
+              La voz en la radio es clara, firme, llena de una determinación que parece imposible en un mundo donde todo está perdido. Habla de una ciudad que ha prosperado mientras el resto del mundo se desmoronaba. Habla de un lugar donde los niños juegan sin miedo a la oscuridad, donde la comida es abundante y las armas están cargadas y listas, pero casi nunca se usan.
+            </p>
+
+            <p>
+              "Si me están escuchando, si aún hay algo de esperanza en su corazón, entonces vengan. Vengan a Dazartl. La entrada al último batallón de la humanidad está abierta, pero no por mucho tiempo. Nos hemos preparado para recibir a aquellos que queden, pero no podemos esperar para siempre. Nuestra seguridad está en el aire, en las alturas, y sabemos que pronto la tierra dejará de ser segura para cualquiera que quede allá abajo."
+            </p>
+
+            <h4>Un Mundo Entre las Nubes: La Vida en Dazartl</h4>
+
+            <p>
+              Dazartl no es solo una ciudad, es un símbolo. Un símbolo de lo que queda de la humanidad, una señal de que no todo está perdido. Las plataformas suspendidas están conectadas por puentes metálicos y cables reforzados, rodeadas de vegetación que crece en jardines cuidadosamente cultivados. Hay granjas hidropónicas, sistemas de energía renovable, y una comunidad que vive junta, que trabaja y prospera en la seguridad de las alturas.
+            </p>
+
+            <p>
+              "Aquí arriba, no somos muchos, pero somos suficientes. Hemos construido algo nuevo, algo que no se parece a lo que había antes. No somos la vieja Hazt. No somos la vieja humanidad. Somos lo que queda, somos lo que ha resistido, y no tenemos miedo. Las criaturas no pueden alcanzarnos, no pueden oírnos ni vernos. Aquí, el cielo es nuestro aliado, el aire nuestro escudo, y la tecnología nuestra fortaleza."
+            </p>
+
+            <h4>El Último Llamado: La Esperanza de un Nuevo Comienzo</h4>
+
+            <p>
+              A medida que la voz continúa, es evidente que este mensaje no es solo una llamada de rescate, sino una advertencia. La humanidad está al borde de la extinción, y este es su último y único refugio.
+            </p>
+
+            <p>
+              "No vengan solos, no vengan desprevenidos. Traigan lo que puedan, traigan a quienes puedan, pero vengan. No puedo prometerles la salvación, no puedo asegurarles que lo que encontrarán aquí será suficiente. Pero sí puedo prometerles una cosa: aquí hay vida. Aquí hay algo por lo que vale la pena seguir luchando."
+            </p>
+
+            <p>
+              El silencio vuelve a llenar la frecuencia por unos segundos antes de que la voz regrese, esta vez más tranquila, más serena.
+            </p>
+
+            <p>
+              "El mundo allá abajo está muerto, pero nosotros aún estamos aquí. La vieja ciudad que fue Hazt ahora es Dazartl, y estamos listos para recibirlos. Pero si deciden quedarse allá abajo, si deciden enfrentar la oscuridad solos, les deseo suerte. Tal vez logren lo que nosotros no pudimos. Tal vez encuentren una manera de sobrevivir en la tierra que nosotros abandonamos. Pero si necesitan un lugar seguro, si necesitan un hogar... ya saben dónde encontrarnos."
+            </p>
+
+            <p>
+              Y así, con un crujido y una estática creciente, el mensaje se desvanece, dejando en el aire una pregunta que nadie se atreve a responder: ¿Cuántos aún quedan vivos para escuchar este último llamado a la esperanza? ¿Cuántos estarán dispuestos a arriesgarlo todo por una vida entre las nubes?
+            </p>
+
+            <p>
+              Dazartl, la ciudad en el cielo, espera.
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" },
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

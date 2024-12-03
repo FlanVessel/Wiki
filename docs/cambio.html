@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Cambio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>El Cambio</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+
+            <p>
+              No sé cuánto tiempo ha pasado desde la Gran Caída. Los días son eternos y las noches, aún más largas. Desde que la humanidad colapsó, desde que esos... seres comenzaron a deambular, he estado observando. Oculto en un refugio improvisado, he estudiado su transformación, el cambio definitivo de lo que alguna vez fueron humanos. No queda rastro de lo que alguna vez conocimos como humanidad en ellos. Lo que recorre las calles ahora es algo totalmente diferente, algo negro, viscoso, y despiadado.
+            </p>
+
+            <h4>De Humanos a Criaturas de Sombra</h4>
+
+            <p>
+              Recuerdo la primera vez que vi a alguien infectado. Todavía tenía una apariencia humana, aunque su piel estaba salpicada de manchas oscuras que parecían extenderse lentamente, cubriendo cada centímetro de su cuerpo. Ahora, esas criaturas han dejado atrás cualquier vestigio de humanidad. Son completamente negras, sus cuerpos parecen estar hechos de una sustancia líquida, como si fueran sombras animadas que se deslizan en la oscuridad. He visto de cerca uno de esos cuerpos, desde la distancia segura de mi escondite, y lo que antes eran músculos y huesos se han transformado en una masa que parece fluir y adaptarse al entorno.
+            </p>
+
+            <p>
+              No caminan, se deslizan, avanzan con movimientos que resultan antinaturales para alguien que aún conserva recuerdos de lo que es ser humano. Sus extremidades se alargan y retuercen con una flexibilidad imposible, y en ocasiones parecen fusionarse con el suelo, como si fueran una extensión del mismo. Se desplazan en silencio, apenas dejando rastro de su presencia, como si su esencia misma fuera una parte de la penumbra que lo envuelve todo.
+            </p>
+
+            <h4>La Fuerza Bruta del Cuerpo a Cuerpo</h4>
+
+            <p>
+              La primera vez que presencié uno de sus ataques fue desde la seguridad de una ventana rota en un segundo piso. Una de esas criaturas se abalanzó sobre su presa con una fuerza que jamás había visto en un ser humano. La violencia fue brutal y rápida. No usan armas, no las necesitan. Todo su cuerpo parece ser una herramienta de destrucción. Sus manos se han convertido en garras afiladas, capaces de destrozar carne y hueso con un solo golpe. He visto a uno de ellos levantar a un hombre del suelo con una sola mano, como si no pesara más que una hoja. La fuerza de su ataque es abrumadora, y rara vez falla. Siempre apuntan al cuello, al torso, a los puntos vitales.
+            </p>
+
+            <p>
+              No he encontrado un patrón claro en su ataque, pero parece que atacan con la misma ferocidad a cualquier cosa que se mueva. No muestran piedad, no parecen reconocer la diferencia entre amigo o enemigo, solo destruyen. Y cuando atacan en grupo, es aún peor. He visto a varias criaturas coordinarse, rodeando a su objetivo y atacando desde todos los ángulos. No emiten ningún sonido, no hay gritos de guerra, solo el golpe de sus cuerpos negros y líquidos chocando contra su presa.
+            </p>
+
+            <h4>Cazadores del Sonido: El Rastreo</h4>
+
+            <p>
+              Lo que más me aterra de estas criaturas no es su fuerza, sino la forma en que cazan. Me ha quedado claro que han perdido la vista. Sus ojos, si es que alguna vez los tuvieron, están cubiertos por esa sustancia negra que parece absorber la luz. Sin embargo, rastrean con una precisión que no parece natural. He observado cómo inclinan sus cabezas, como si estuvieran escuchando atentamente. Una vez que perciben un sonido, aunque sea el más leve, se mueven directamente hacia él. Puedo decir con certeza que son cazadores del sonido.
+            </p>
+
+            <p>
+              He tenido que aprender a vivir en silencio absoluto, conteniendo mi respiración cuando uno de ellos pasa cerca, evitando incluso el crujido de una madera suelta bajo mis pies. Un simple susurro o el sonido de una lata rodando es suficiente para atraerlos. Se mueven en grupo, coordinados, como si compartieran una conciencia común que los guía. He notado que, una vez que fijan su atención en un objetivo, no lo dejan ir hasta que han rastreado cada movimiento, cada ruido, hasta atraparlo. No hay forma de despistarlos, no hay forma de engañarlos. Son persistentes y, lo peor de todo, pacientes.
+            </p>
+
+            <h4>El Proceso de Consumo: Absorbiendo la Vida</h4>
+
+            <p>
+              Lo más macabro es lo que ocurre después del ataque. No matan por matar. Hay algo en su comportamiento que es... sistemático. Una vez que han derribado a su presa, se inclinan sobre ella, rodeándola por completo con sus cuerpos negros y fluidos. No es un espectáculo fácil de ver, pero he tenido que obligarme a hacerlo, por mi propia supervivencia, para entender qué son realmente estas cosas.
+            </p>
+
+            <p>
+              Los he visto absorber a sus víctimas, literalmente. La sustancia negra que los cubre parece expandirse, rodeando el cuerpo inerte de la persona que han derribado. Lo que ocurre entonces es una especie de fusión. He presenciado cómo la carne y los huesos de la víctima desaparecen lentamente, siendo devorados por esa negrura, como si fueran tragados por un abismo sin fondo. La criatura parece hincharse brevemente, como si absorbiera algo esencial de su presa, antes de volver a su tamaño original.
+            </p>
+
+            <p>
+              He intentado seguir a algunas de estas criaturas después del consumo, esperando algún cambio en su comportamiento o en su apariencia. No hay cambios visibles, pero hay algo en sus movimientos que se vuelve más decidido, más enfocado, como si hubieran adquirido algo de las víctimas que devoraron. Quizás sea más fuerza, quizás sea memoria, no lo sé. Solo puedo suponer que el parásito que los controla, esa sustancia negra y pegajosa, necesita algo de sus víctimas, algo que lo fortalece.
+            </p>
+
+            <h4>La Incógnita del Parásito</h4>
+
+            <p>
+              ¿Qué es este parásito? ¿Por qué transforma a las personas en estas criaturas? No tengo respuestas, solo preguntas. Mis observaciones no han sido suficientes para comprender por completo su naturaleza. He visto cómo el parásito se adhiere a sus cuerpos, cómo se extiende, cómo consume, pero nunca cómo empezó ni por qué. Todo lo que sé es que no son humanos, no más. Son cazadores perfectos, depredadores diseñados para erradicar todo a su paso, y lo hacen sin piedad ni remordimiento.
+            </p>
+
+            <p>
+              Los días pasan y la esperanza de entender qué son o de detenerlos parece cada vez más lejana. Me escondo en las sombras, esperando un día en que quizás, solo quizás, algo o alguien encuentre una manera de detener esta pesadilla. Porque, hasta ahora, cada enfrentamiento solo confirma lo que más temo: la humanidad ha sido sustituida, y en su lugar, estas criaturas, estas sombras, han tomado el control del mundo.
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" },
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

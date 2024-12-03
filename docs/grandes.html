@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Son Grandes</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>Son Grandes</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+
+            <p>
+              El mundo se ha vuelto oscuro y aterrador desde la caída. Cada día trae un nuevo peligro, y he aprendido que la única manera de sobrevivir es mantenerme en las sombras, escondido, moviéndome rápido y silenciosamente. Pero la última semana fue diferente. Empecé a notar algo extraño en las criaturas que cazan por lo que solían ser nuestras ciudades. Entre ellas, en medio de su frenética actividad nocturna, vi algo que me heló la sangre: una figura que se alzaba más alta que el resto, una silueta descomunal que no encajaba con lo que sabía de estas criaturas. Algo mucho más grande.
+            </p>
+
+            <p>
+              Lo seguí por días, tratando de entender qué era, si era una mutación o algo completamente nuevo. A distancia, parecía un ser humanoide, pero su tamaño lo convertía en una aberración. Debía medir al menos dos veces lo que un hombre promedio. Su piel, igual de negra y viscosa que la de las otras criaturas, tenía algo distinto: una textura más rugosa, como si se hubiera formado una especie de armadura natural. Cada paso que daba hacía vibrar el suelo, y cada vez que lo veía avanzar, arrasando con cualquier obstáculo en su camino, me daba cuenta de que este no era un simple cazador nocturno. Esto era algo más. Algo mucho más peligroso.
+            </p>
+
+            <h4>La Decisión de Investigar</h4>
+
+            <p>
+              Decidí seguirlo. Algo en mi interior me decía que entender a esa cosa era clave para entender la verdadera naturaleza de lo que está sucediendo. Tal vez, si podía descubrir qué era y cómo se formaba, habría alguna pista sobre la evolución de estas criaturas. Recogí mi equipo, una linterna de luz roja para no atraer atención, mi libreta de anotaciones, y mi viejo cuchillo de caza. Seguirlo no fue fácil, su tamaño le permitía moverse a través de la devastación con una facilidad increíble, mientras que yo debía arrastrarme por entre ruinas y esconderme cada vez que sentía que giraba la cabeza en mi dirección.
+            </p>
+
+            <p>
+              Después de días siguiéndolo desde una prudente distancia, vi cómo se dirigía hacia un conjunto de cuevas en lo profundo del bosque. Era como si la criatura estuviera buscando algo. Aceleré el paso, manteniéndome en las sombras, y entré en la cueva minutos después de que desapareciera en su interior. Mi corazón latía con una fuerza tal que sentía que las criaturas podrían oírlo desde el otro extremo de la cueva. La atmósfera era opresiva, y el aire olía a podredumbre y humedad.
+            </p>
+
+            <h4>Dentro de la Cueva</h4>
+
+            <p>
+              Avancé lentamente, evitando hacer ruido, con la linterna apenas iluminando el suelo a mis pies. En la distancia, el sonido de algo pesado moviéndose resonaba en la oscuridad. Lo que fuera esa criatura, no estaba sola. Había más, y parecían estar agrupadas en algún tipo de reunión macabra. Seguí adelante, el pasaje se estrechaba y las paredes se volvían más frías y húmedas. Al doblar una esquina, mi linterna capturó por un segundo una figura que me dejó helado: un brazo de tamaño colosal se asomaba desde una abertura más adelante, con garras que podían destrozar a cualquier ser vivo de un solo golpe.
+            </p>
+
+            <p>
+              Me escondí detrás de una roca, mi respiración pesada, intentando contener el pánico. El sonido de la criatura reverberaba en las paredes de la cueva, un gruñido bajo y gutural que no tenía nada de humano. Decidí acercarme más, moviéndome sigilosamente, manteniendo la linterna apagada, guiado solo por el eco de su movimiento. El pasaje se abrió a una cámara natural, donde finalmente pude ver al monstruo completo. Era aún más aterrador de cerca: su cuerpo era una masa de músculos tensos y piel viscosa, sus ojos parecían huecos, pero su cabeza se giraba como si percibiera mi presencia.
+            </p>
+
+            <p>
+              Me agaché, casi arrastrándome en el suelo, cuando la roca sobre la que me apoyaba cedió, haciendo un ruido seco que retumbó en toda la cueva. La criatura se detuvo de inmediato, y en ese momento supe que había cometido un error fatal.
+            </p>
+
+            <h4>La Caza Final</h4>
+
+            <p>
+              De repente, sentí un golpe brutal en el costado que me arrojó contra la pared. La linterna salió disparada de mi mano, iluminando por un segundo la cara deformada de la criatura antes de apagarse. Mi costado ardía con un dolor insoportable; el golpe me había dejado sin aire y mi visión se nublaba. Pero sabía que no podía quedarme allí. Me puse de pie, tambaleándome, y corrí tan rápido como pude. Podía oír sus pasos pesados detrás de mí, cada uno más cercano que el anterior.
+            </p>
+
+            <p>
+              Mis fuerzas se desvanecían con cada paso. Tropecé, caí al suelo, y sentí el calor pegajoso de la sangre corriendo por mi costado. Con desesperación, me arrastré hacia una grieta en la roca, demasiado pequeña para la criatura gigante, pero suficiente para esconderme. La criatura pasó de largo, su rugido llenando la cueva con una furia que parecía capaz de hacerla colapsar sobre nosotros. Solo entonces me atreví a mirar la herida: era profunda, sangraba sin parar, y mi cabeza comenzaba a dar vueltas.
+            </p>
+
+            <h4>Palabras de Sufrimiento</h4>
+
+            <p>
+              No sé cuánto tiempo he estado aquí. Mi visión es cada vez más borrosa, y el frío se adueña de mi cuerpo. Sé que no tengo mucho tiempo. El dolor se ha convertido en algo distante, como un susurro al borde de la conciencia. Trato de recordar cómo empezó todo, pero ya no importa. Estoy solo en esta oscuridad, solo con mi libreta y las manchas de sangre que se expanden sobre ella.
+            </p>
+
+            <p>
+              El monstruo sigue ahí afuera, puedo oírlo merodear en la distancia, esperando que el olor de mi sangre lo guíe hasta mí. Mis manos están temblando mientras trato de escribir estas últimas palabras. No quiero morir aquí, no quiero que esta cueva sea mi tumba, pero la fuerza se me escapa, la vida se me desliza entre los dedos.
+            </p>
+
+            <p>
+              Mi respiración es cada vez más débil. No puedo levantarme. Solo puedo sentir el frío de la roca bajo mi cuerpo y el eco de mi propio llanto. ¿Por qué decidí seguirlo? ¿Por qué no me quedé escondido? Esas cosas no son humanas... no pueden serlo. Son demasiado grandes, demasiado monstruosas para haber sido alguna vez como nosotros. La oscuridad me rodea, y apenas puedo ver las palabras que estoy escribiendo.
+            </p>
+
+            <p>
+              Duele... duele tanto... La sangre no se detiene, y el monstruo está cada vez más cerca. Esto es el fin. No hay salvación, no hay esperanza, solo la fría certeza de que todo se ha perdido.
+            </p>
+
+            <p>
+              Mis fuerzas me abandonan... No quiero morir... no aquí... no así...
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" },
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

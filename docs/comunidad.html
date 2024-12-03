@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Comunidad en el Subsuelo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>La Comunidad en el Subsuelo</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+
+            <p>
+              Nunca pensé que terminaría viviendo bajo tierra. En los primeros días de la Gran Caída, cuando el parásito aún no había tomado por completo nuestras vidas, tratamos de resistir en la superficie. Pero a medida que las calles se llenaban de cadáveres ambulantes y el aire se volvía irrespirable, nos dimos cuenta de que la única manera de sobrevivir era desaparecer de la vista, esconderse en lo profundo, donde esas cosas no pudieran encontrarnos.
+            </p>
+
+            <p>
+              Habíamos oído rumores de refugios subterráneos, restos de búnkeres de la vieja guerra que nunca se llegaron a usar. En ese entonces, éramos un grupo de veinte personas. Nos conocíamos del vecindario, del trabajo, de las tiendas locales. La desesperación nos unió y decidimos buscar uno de esos refugios. Tres días de caminata hacia el este nos llevaron hasta una entrada escondida en una colina. Era una pequeña puerta metálica, oculta por la maleza y sellada con una gruesa capa de óxido. Romper el cerrojo fue un trabajo arduo, pero valió la pena. Allí, en la oscuridad, encontramos nuestro nuevo hogar.
+            </p>
+
+            <h4>El Refugio de la Esperanza</h4>
+
+            <p>
+              Al principio, vivir en el subsuelo era como estar en el vientre de una bestia gigante. Oscuro, húmedo, con un constante eco que hacía difícil dormir. Pero lo transformamos en un refugio seguro. Bloqueamos la entrada principal, sellamos las grietas, y usamos generadores para mantener las luces funcionando. Nos dividimos en grupos para gestionar el agua, la comida y la seguridad. Había un sistema de ventilación anticuado, pero funcionaba lo suficiente para no sofocarnos con el aire viciado. Lo apodamos "El Refugio de la Esperanza".
+            </p>
+
+            <p>
+              El miedo nunca desaparecía, pero al menos estábamos a salvo. No había muchos recursos, pero con lo que encontramos en la superficie y lo poco que trajimos con nosotros, pudimos aguantar. Recogíamos agua de un manantial cercano durante la noche, cuando el silencio era absoluto y esos monstruos parecían estar menos activos. Con el tiempo, aprendimos a cultivar hongos y algunas raíces que encontrábamos en los túneles abandonados. No era mucho, pero era suficiente para mantenernos vivos.
+            </p>
+
+            <h4>Las Reglas de la Supervivencia</h4>
+
+            <p>
+              Sobrevivir bajo tierra nos cambió. Tuvimos que adaptarnos a nuevas reglas, reglas que nadie se atrevía a romper. Nadie salía solo. Las expediciones a la superficie eran rápidas, precisas, y solo las hacíamos cuando era absolutamente necesario. No podíamos arriesgarnos a que alguien se contagiara. La paranoia crecía con cada día que pasaba, y las tensiones entre nosotros aumentaban, pero mantenernos unidos era nuestra única esperanza.
+            </p>
+
+            <p>
+              Un hombre llamado Jared tomó el liderazgo. Era duro y frío, pero también era justo. Fue él quien implementó la cuarentena. Si alguien mostraba signos de fiebre o de comportamiento extraño, lo aislábamos en una habitación sellada. Tuvimos que hacerlo dos veces, y ambas personas murieron solas, sin contacto con el resto. La culpa nos persigue, pero sabemos que no había otra opción. El parásito es implacable; una vez que te atrapa, no hay vuelta atrás.
+            </p>
+
+            <h4>Voces en la Oscuridad</h4>
+
+            <p>
+              El mayor peligro no eran solo los infectados, sino el aislamiento. Las sombras se volvían más densas con el paso de las semanas, y algunos comenzaron a escuchar cosas. Murmullos, pasos lejanos, el sonido de un susurro que parecía moverse en los túneles. Pensamos que tal vez algunos de esos monstruos se habían adentrado en el subsuelo, pero nunca encontramos pruebas. Aun así, la sensación de ser observados nunca nos abandonó.
+            </p>
+
+            <p>
+              Una noche, mientras me encontraba de guardia, escuché un golpe fuerte en la puerta metálica que habíamos sellado. No me atreví a abrirla, solo esperé en silencio con la linterna apagada. Mi corazón latía tan rápido que creí que explotaría. No sé cuánto tiempo pasó, pero finalmente, el ruido se detuvo. Jared me encontró al amanecer, inmóvil, con el arma en la mano y la mirada fija en la puerta. Desde ese día, reforzamos todas las entradas, y nadie volvió a hablar de lo que había pasado.
+            </p>
+
+            <h4>La Luz al Final del Túnel</h4>
+
+            <p>
+              Ha pasado tanto tiempo que he perdido la cuenta de los días. Algunos dicen que han visto luz en el horizonte, que en Siloon la vida sigue de alguna forma. La esperanza es lo único que nos queda, pero es frágil. Hay discusiones sobre si deberíamos salir, abandonar el refugio y buscar esa supuesta salvación en la superficie. Jared cree que es una trampa, que no hay nada más allá que ruinas y muerte. Pero otros no están tan seguros.
+            </p>
+
+            <p>
+              He decidido quedarme. No puedo enfrentarme al sol, no después de tanto tiempo en la oscuridad. Aquí, en el subsuelo, hay una extraña paz. Al menos aquí entiendo las reglas del juego, sé lo que esperar. Si es cierto que hay esperanza allá afuera, que hay vida más allá de las ruinas de Pelstrot, espero que alguien lo descubra. Pero no seré yo. No me quedan fuerzas para seguir luchando contra sombras. Lo único que me queda es resistir, un día más, esperando que en algún momento, todo esto tenga sentido.
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" },
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

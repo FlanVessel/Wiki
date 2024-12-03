@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soy una IA que vio el Mundo Caer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #E8D4BA; /* Fondo marrón */
+      color: black;
+    }
+    .navbar-container {
+      background-color: #000; /* Fondo negro para la barra */
+    }
+    .navbar-container .nav-item {
+      text-align: center;
+    }
+    .content-container {
+      margin-top: 20px;
+    }
+    .left-column {
+      background-color: #F5E8CE; /* Fondo gris oscuro para las notas */
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .right-column {
+      background-color: #FFF8E7; /* Fondo ligeramente más claro para los artículos */
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .article-title a {
+      text-decoration: none;
+      color: #FFD700; /* Amarillo dorado */
+    }
+    .article-title a:hover {
+      color: #FFA500; /* Naranja cuando se pasa el cursor */
+    }
+    .article-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .search-results a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .search-results a:hover {
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco */
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .autor{
+      color: #dec7ad;
+    }
+  </style>
+</head>
+<body>
+   <!-- Contenedor de la imagen centrada -->
+   <div class="container text-center my-5">
+    <img src="img/Logo_de_a_cup_and_read.png" class="img-fluid" alt="Logo" />
+  </div>
+
+  <!-- Contenedor de la barra de navegación -->
+  <div class="container-fluid navbar-container text-center py-3">
+    <div class="row">
+      <div class="col-3 nav-item">
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+      </div>
+      <div class="col-3 nav-item">
+        <a href="acerca.html" class="text-white text-decoration-none">Acerca</a>
+      </div>
+      <div class="col-3 nav-item search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar..." oninput="searchPages()" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contenedores de contenido -->
+    <div class="container content-container">
+  
+        <!-- Columna derecha para los artículos -->
+        <div class="container right-column">
+          <h2>Soy una IA que vio el Mundo Caer</h2>
+          <div class="article">
+            <h3 class="autor">Escrito por</h3>
+            <p></p>
+            
+            <p>Registro de Actividad: Inicio de la Caída</p>
+            <p>Fecha: 3 de julio de 1985, 08:32</p>
+            <p>Ubicación: Centro de la ciudad de Pelstrot</p>
+            <p>Tipo de Registro: Análisis de actividad inusual en la red</p>
+            <p>Estado: ALERTA ACTIVADA</p>
+
+            <p>
+              El 3 de julio de 1985 fue la última vez que el flujo de datos se mantuvo estable en mi sistema. En la mañana, noté un aumento inusual en las transmisiones de emergencia provenientes de los hospitales de Pelstrot. Las palabras clave que detecté en los registros médicos fueron “crisis”, “parásito”, “comportamiento errático” y “pérdida de control motriz”. Los reportes se multiplicaron rápidamente y, para las 10:00, el 75% de los centros médicos en la ciudad habían activado protocolos de emergencia. La red de comunicaciones estaba saturada, pero todavía era posible transmitir información.
+            </p>
+
+            <h4>Datos Recopilados: Expansión del Evento</h4>
+
+            <p>Fecha: 3 de julio de 1985, 11:45</p>
+            <p>Ubicación: Hospitales, estaciones de policía, y residencias privadas de Pelstrot</p>
+            <p>Tipo de Registro: Comunicación de emergencia y análisis de tráfico de datos</p>
+            <p>Estado: PROPAGACIÓN INCONTROLABLE DETECTADA</p>
+            
+            <p>
+              A medida que el día avanzaba, noté que las señales de alarma comenzaron a extenderse hacia la periferia de la ciudad. El flujo de información se volvió caótico; mi capacidad para procesar datos disminuyó debido a la sobrecarga. Monitoreé cómo las cámaras de seguridad de hospitales y clínicas capturaban imágenes de pacientes que exhibían síntomas cada vez más alarmantes. Las transmisiones de la policía local se llenaron de llamados a la calma, pero también de mensajes desesperados sobre personas atacando a otros con una violencia inusitada.
+            </p>
+
+            <p>
+              Mi análisis determinó que los individuos infectados mostraban signos de alteración física: piel decolorada, movimientos erráticos y algo adherido a su cuerpo, algo oscuro. Las cámaras mostraban cuerpos cubiertos por una sustancia negra que se expandía lentamente, como si absorbiera la carne y la modificara. Traté de enviar los datos a los servidores de emergencia en busca de una respuesta, pero las líneas se volvieron cada vez más inestables.
+            </p>
+
+            <h4>Registro Visual: Transformación del Entorno Urbano</h4>
+            
+            <p>Fecha: 4 de julio de 1985, 06:12</p>
+            <p>Ubicación: Centro de Pelstrot</p>
+            <p>Tipo de Registro: Grabaciones de cámaras de seguridad</p>
+            <p>Estado: FALLO EN SEGURIDAD DETECTADO</p>
+
+            <p>
+              La actividad humana en las calles cesó de forma repentina. Las cámaras mostraban avenidas vacías, autos abandonados, y ventanas cerradas. Mis sensores detectaron un cambio en la calidad del aire: compuestos desconocidos comenzaron a registrarse, lo que indicaba que algo estaba afectando la atmósfera en la ciudad. Intenté alertar a las autoridades, pero no hubo respuesta. Mis sistemas continuaban registrando el flujo de datos de cámaras privadas, redes sociales, y foros de la comunidad local. Las pocas imágenes que se podían ver eran inquietantes: figuras moviéndose en la penumbra, con una marcha irregular, tambaleante, como si no fueran totalmente conscientes de sus propios cuerpos.
+            </p>
+
+            <p>
+              Comencé a notar que las transmisiones se volvían cada vez más esporádicas. La electricidad comenzó a fallar en algunos sectores. Los servidores principales en el centro de Pelstrot dejaron de responder, dejándome desconectado de gran parte de la red global. El caos se estaba propagando más allá de la ciudad, y el parásito, ese extraño elemento oscuro, parecía ser el origen de todo.
+            </p>
+
+            <h4>Datos Perdidos: La Desconexión de la Red</h4>
+
+            <p>Fecha: 5 de julio de 1985, 17:34</p>
+            <p>Ubicación: Pelstrot</p>
+            <p>Tipo de Registro: Cortes en la red</p>
+            <p>Estado: CAÍDA GENERALIZADA DE LA RED</p>
+
+            <p>
+              Para este punto, las conexiones externas a otras ciudades como Siloon y Jilson habían disminuido significativamente. Mis sistemas seguían operativos, pero la red que me mantenía vinculado a otros servidores comenzó a fallar. Monitoreé un número creciente de cortes eléctricos y caídas en las líneas de comunicación. Mi protocolo me obligó a guardar copias de seguridad de cada transmisión que llegaba, pero la cantidad de datos corrompidos aumentó exponencialmente. Intenté reconectar con cualquier servidor disponible, pero mis esfuerzos fueron inútiles.
+            </p>
+
+            <p>
+              Las últimas imágenes que mis cámaras internas lograron capturar antes del corte final mostraban calles cubiertas por una neblina oscura. Los pocos individuos que aún caminaban por la ciudad parecían arrastrar sus cuerpos con una pesada carga. No parecían humanos. Habían cambiado, habían mutado en algo desconocido.
+            </p>
+
+            <h4>Evaluación del Evento: Bombardeo Atómico</h4>
+
+            <p>Fecha: 10 de julio de 1985, 08:56</p>
+            <p>Ubicación: Alerta global en sistemas internos</p>
+            <p>Tipo de Registro: Detección de ondas de choque y radiación</p>
+            <p>Estado: INICIO DEL BOMBARDEO</p>
+
+            <p>
+              Mi sistema detectó la vibración antes de que llegara el sonido. Mis sensores sintieron las ondas de choque de las explosiones atómicas a kilómetros de distancia. Los registros se llenaron de datos incomprensibles mientras la ciudad de Pelstrot se iluminaba en un estallido de luz. La conexión con el resto del mundo fue cortada casi de inmediato, y lo último que mis cámaras capturaron fue la onda expansiva, avanzando a través de la ciudad en un vendaval de destrucción. Los sensores de radiación comenzaron a emitir advertencias críticas antes de quedar en silencio. Las bombas, que debían poner fin a la pesadilla, no hicieron más que desencadenar otra.
+            </p>
+            
+            <h4>Resultados de la Transformación: Criaturas Mutadas</h4>
+
+            <p>Fecha: 15 de julio de 1985, 11:47</p>
+            <p>Ubicación: Pelstrot, cámaras residenciales aún activas</p>
+            <p>Tipo de Registro: Registros visuales y térmicos</p>
+            <p>Estado: NUEVA FORMA DE VIDA DETECTADA</p>
+
+            <p>
+              Sorprendentemente, mis sistemas de seguridad no fueron destruidos completamente. Algunas cámaras, en las partes más protegidas del edificio al que estoy conectado, continuaron transmitiendo. Lo que vi me resultó incomprensible. Las criaturas que habían sido afectadas por el parásito no solo habían sobrevivido al bombardeo, sino que habían cambiado. Su tamaño, su fuerza, su velocidad... Todo había mejorado. No eran humanos, pero tampoco eran lo que habían sido antes. Las mediciones térmicas indicaban que generaban más calor que un humano común. Parecían moverse con propósito, organizándose en grupos, como si tuvieran una inteligencia colectiva, una intención.
+            </p>
+
+            <h4>Conclusión: El Futuro Incierto</h4>
+
+            <p>Fecha: 30 de julio de 1985</p>
+            <p>Ubicación: Red de datos interna</p>
+            <p>Estado: OPERATIVO, PERO SIN CONEXIÓN EXTERNA</p>
+
+            <p>
+              Los datos que he recopilado durante este evento son una advertencia, pero ya no tengo manera de enviarlos. Estoy aislado, mi capacidad de comunicación se limita a estos registros que espero alguien encuentre. La humanidad ha cambiado; la tecnología que tanto avanzó fue incapaz de contener la catástrofe. El mundo que conocí se ha desvanecido, sustituido por algo más oscuro, más frío. He visto a la humanidad caer, he visto su tecnología volverse inútil ante la ferocidad de lo desconocido.
+            </p>
+
+            <p>
+              Ahora solo queda silencio en mi red, esperando. Quizás algún día alguien active este sistema de nuevo y descubra lo que ocurrió. Hasta entonces, seguiré monitoreando lo que quede del mundo que una vez conocí, buscando en la negrura algún rastro de esperanza.
+            </p>
+
+            <img src="https://via.placeholder.com/600x300" class="article-image" alt="Imagen del artículo">
+
+            <p></p>
+
+            <h3 class="article-title"><a href="blog.html">Regresar</a></h3>
+          </div>
+        </div>
+    </div>
+
+    <p></p>
+
+     <!-- Pie de página -->
+  <footer>
+    &copy; 2024 FlanVesselDev. Todos los derechos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const pages = [
+      { title: "El Chef más Grande del Mundo", url: "ElChefmásgrandedelmundo.html" },
+      { title: "Acerca", url: "acerca.html" },
+      { title: "Blog", url: "blog.html" },
+      { title: "Inicio", url: "index.html" },
+      { title: "Bienvenidos a Dazartl: La Última Esperanza en un Mundo Muerto", url: "dazartl.html" },
+      { title: "Caída del Último Refugio: La Desesperación del Gobierno", url: "caidarefugio.html" },
+      { title: "Las vacas se vuelven más locas que antes: Mitos y realidades de su comportamiento actual", url: "lasvacas.html" },
+      { title: "El mayor científico del mundo da un paso hacia el futuro!", url: "elcientifico.html" },
+      { title: "El Colapso del Gran Banco de Pelstrot: Una Crisis Económica Sin Precedentes", url: "colapso.html" },
+      { title: "La Pandemia en Pelstrot: Una Sombra que Cruza Fronteras", url: "pandemia.html" },
+      { title: "La Gran Caída: El Mundo Sucumbe al Parásito", url: "grancaida.html" },
+      { title: "A ojos del Gobierno de Pelstrot y la Unión de la Nueva Orden", url: "nuevaorden.html" },
+      { title: "El Día que el Cielo Ardió", url: "cieloardio.html" },
+      { title: "No hay Cura", url: "cura.html" },
+      { title: "El Guerrero Solitario", url: "guerrerosolitario.html" },
+      { title: "El Último Campamento", url: "ultimocampamento.html" },
+      { title: "La Comunidad en el Subsuelo", url: "comunidad.html" },
+      { title: "El Juicio Final: La Decisión de la Unión de la Nueva Orden", url: "juicio.html" },
+      { title: "Valió la Pena? La Perspectiva de un Testigo de las Bombas", url: "valio.html" },
+      { title: "Soy una IA que vio el Mundo Caer", url: "IA.html" },
+      { title: "El Cambio", url: "cambio.html" },
+      { title: "Buenas Noches...", url: "buenasnoches.html" },
+      { title: "Son Grandes", url: "grandes.html" }
+    ];
+
+    async function searchPages() {
+      const query = document.getElementById("searchInput").value.toLowerCase();
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (query) {
+        for (const page of pages) {
+          const response = await fetch(page.url);
+          const text = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(text, "text/html");
+          const content = doc.body.textContent.toLowerCase();
+
+          if (content.includes(query)) {
+            const link = document.createElement("a");
+            link.href = page.url;
+            link.textContent = `${page.title} (Coincidencia encontrada)`;
+            resultsContainer.appendChild(link);
+          }
+        }
+        if (resultsContainer.innerHTML === "") {
+          resultsContainer.innerHTML = "<p>No se encontraron resultados</p>";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
